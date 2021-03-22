@@ -9,7 +9,6 @@ if (!fs.existsSync("./.secret")) {
   throw new Error("Key file does not exist!");
 } else {
   key = Buffer.from(fs.readFileSync("./.secret").toString(), "base64");
-  console.log(key.length);
   if (key.length != 64) {
     throw new Error("Badly formatted key!");
   }
