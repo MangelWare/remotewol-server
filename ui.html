@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $.post("/wakeup");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Debug UI for Remote WOL</h2>
+
+    <button>Wake up!</button>
+  </body>
+</html>
