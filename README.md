@@ -3,6 +3,8 @@
 A server for passing a wakeup call to a small local device.
 Calls are received from a pre-defined Telegram user using a bot.
 
+A client implementation based on an ESP8266 can be found [here](https://github.com/MangelWare/remotewol-client)
+
 ### Configuration
 
 Create a `.env` file, in which you specify the following environment variables:
