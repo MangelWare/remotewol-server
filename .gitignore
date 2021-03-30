@@ -117,4 +117,5 @@ dist
 
 
 # Custom
-.secret
+.env
+.env*
