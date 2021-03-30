@@ -172,6 +172,6 @@ const telegramAPI = require("./lib/telegramAPI");
 const { Console } = require("console");
 telegramAPI.setWebhook(
   process.env.TELEGRAM_API_KEY,
-  "https://remotewol.simonmangel.de:8443/" + process.env.WEBHOOK_SUFFIX,
+  "https://" + process.env.HOSTNAME + ":8443/" + process.env.WEBHOOK_SUFFIX,
   process.env.TELEGRAM_CERT_PATH
 );
