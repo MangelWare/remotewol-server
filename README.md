@@ -8,7 +8,8 @@ A client implementation based on an ESP8266 can be found [here](https://github.c
 ### Configuration
 
 Create a `.env` file, in which you specify the following environment variables:
-  - `HMAC_KEY`: Pre-shared key between client and server device for authentication of status requests. Can be generated using `makeKey.js` (simply run `node makeKey.js`)
+- `HOSTNAME`: Hostname of your server (e.g,. `remotewol.example.com`)
+- `HMAC_KEY`: Pre-shared key between client and server device for authentication of status requests. Can be generated using `makeKey.js` (simply run `node makeKey.js`)
 - `TELEGRAM_API_KEY`: The Telegram API key of your bot
 - `TELEGRAM_USER_ID`: The Telegram user ID of the user which is authorized to perform requests
 - `TELEGRAM_ADMIN_UNAME`: The Telegram username which should be referenced by the bot when unauthorized users message it
